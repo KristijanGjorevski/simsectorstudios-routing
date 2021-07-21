@@ -1,0 +1,58 @@
+<form class="add-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="title">Title of the post</label>
+    <input
+      type="text"
+      formControlName="title"
+      class="form-control"
+      name="title"
+      id="title"
+    />
+  </div>
+  <div class="form-control">
+    <label for="body">Add your post description</label>
+    <textarea
+      name="body"
+      formControlName="body"
+      class="form-control"
+      id="body"
+    ></textarea>
+  </div>
+  <input type="submit" value="Save Post" class="btn btn-block" />
+</form>
+
+<!-- <form class="example-form" (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label for="title">Title of the post</mat-label>
+      <input
+        matInput
+        type="text"
+        name="title"
+        [(ngModel)]="title"
+        id="title"
+        placeholder="Title of the post here.."
+      />
+    </mat-form-field>
+  </div>
+  <div class="form-control">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label for="body">>Add your post description</mat-label>
+      <textarea
+        matInput
+        name="body"
+        [(ngModel)]="body"
+        id="body"
+        placeholder="Write the post description here"
+      ></textarea>
+    </mat-form-field>
+  </div>
+  <button
+    mat-stroked-button
+    color="primary"
+    value="Save Post"
+    class="btn btn-block"
+  >
+    Primary
+  </button>
+</form> -->
